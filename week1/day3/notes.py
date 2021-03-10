@@ -26,4 +26,3 @@ nested list
 {'wordName': 'wordValue'}
 
 
-
