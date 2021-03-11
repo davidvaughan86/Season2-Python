@@ -19,7 +19,7 @@ while firstNumber < 0:
     print('------------------------')
 
 
-math = input(['add' , 'subtrat' , 'divide' , 'multiply >>>'])
+math = input(['add' , 'subtract' , 'divide' , 'multiply >>>'])
 
 
 if math == 'add':
