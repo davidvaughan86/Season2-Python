@@ -11,7 +11,7 @@ def add (number1, number2):
 def subtract (number1, number2):
     return int(number1)-int(number2)
 history = []
-selection = []
+selections = []
 while True:
     print('CALCULATOR TIME!!!!')
     print('---------------')
@@ -30,11 +30,12 @@ while True:
     print('---------------')
     print('thinking finished in 0.0000010 ms')
 
-    selection.append(number1)
-    selection.append(operator)
-    selection.append(number2)
+    selections.append(number1)
+    selections.append(operator)
+    selections.append(number2)
     print(selection)
-
+    
+    for selection in selections
 
     if operator == '*':
         answer = multiply(number1, number2)

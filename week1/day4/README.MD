@@ -86,3 +86,5 @@ combinedList2 = list.extend([listed items])
 
 # modify list
 list[index#] = 'variable'
+
+del list[index#]
