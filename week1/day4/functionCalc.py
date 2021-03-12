@@ -1,33 +1,59 @@
-while(True):
 
-    def multiply (number1, number2):
-        return number1*number2
+def multiply (number1, number2):
+    return int(number1)*int(number2)
 
-    def divide (number1, number2):
-        return number1/number2
+def divide (number1, number2):
+    return int(number1)/int(number2)
 
-    def add (number1, number2):
-        return number1+number2
+def add (number1, number2):
+    return int(number1)+int(number2)
 
-    def subtract (number1, number2):
-        return number1-number2
-    def stop (operator):
-            print('end')
-        
-    
+def subtract (number1, number2):
+    return int(number1)-int(number2)
+history = []
+selection = []
+while True:
+    print('CALCULATOR TIME!!!!')
+    print('---------------')
+    number1 = input('pick a number\n')
+    print('---------------')
+    if number1 == 'stop':
+        break
+    if number1 == 'history':
+        print(history)
+        break
+    operator = input('pick an operator: *, /, +, -, stop\n')
+    print('---------------')
 
-    operator = input('pick an operator: *, /, +, -')
-    number1 = int(input('pick a number'))
-    number2 = int(input('pick a 2nd number'))
+
+    number2 = input('pick a 2nd number\n')
+    print('---------------')
+    print('thinking finished in 0.0000010 ms')
+
+    selection.append(number1)
+    selection.append(operator)
+    selection.append(number2)
+    print(selection)
+
 
     if operator == '*':
-        print(multiply(number1, number2))
+        answer = multiply(number1, number2)
+        print('---------------')
+        print('the answer is %s' % answer)
     if operator == '/':
-        print(multiply(number1, number2))
+        answer = divide(number1, number2)
+        print('---------------')
+        print('the answer is %s' % answer)
     if operator == '+':
-        print(multiply(number1, number2))
+        answer = add(number1, number2)
+        print('---------------')
+        print('the answer is %s' % answer)
     if operator == '-':
-        print(multiply(number1, number2))
-  
+        answer = subtract(number1, number2)
+        print('---------------')
+        print('the answer is %s' % answer)
     
+    history.append(answer)
+    
+
 
