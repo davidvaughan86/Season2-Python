@@ -8,9 +8,10 @@
 #  delete the items on the list
 
 #  stop the list
+from itertools import islice
 
 
-aList = []
+aList = {}
 print(aList)
 def message():
     print('welcome to the todo list')
@@ -20,14 +21,20 @@ message()
 def addItem ():
     print('please add your item')
     newItem = input(str(''))
+    priority = input('please select the level of priority(low, medium, high')
     newItemlen = len(newItem)
+    
     while newItemlen < 3:
         print('please add a valid number of characters for your item (3)')
+        priority = input('please select the level of priority(low, medium, high')
         newItemlen = len(newItem)
     if newItemlen >= 3:
-        aList.append(newItem)
-        print('this whas just added' + newItem)
+        aList[newItem] = priority
+        print('this whas just added' + newItem + 'and its priority' + priority)
         print(aList)
+        
+
+        
 def viewItem():
     print(aList)
     # print(aList[1])
@@ -46,19 +53,19 @@ def delItem():
     if deletedItem == 'b':
         message()
     if deletedItem == '1':
-        del aList[0]
+        del aList[next(iter(aList))]
         print(aList)
     if deletedItem == '2':
-        del aList[1]
+        del aList[next(islice(aList, 1, None))]
         print(aList)
     if deletedItem == '3':
-        del aList[2]
+        del aList[next(islice(aList, 2, None))]
         print(aList)
     if deletedItem == '4':
-        del aList[3]
+        del aList[next(islice(aList, 3, None))]
         print(aList)
     if deletedItem == '5':
-        del aList[4]
+        del aList[next(islice(aList, 4, None))]
         print(aList)
        
 
