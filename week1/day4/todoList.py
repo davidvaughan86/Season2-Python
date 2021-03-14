@@ -37,16 +37,29 @@ def viewItem():
 
 def delItem():
     print(aList)
-    print('which # do you want to delete? Or press (b) to return to menu')
+    i = 0
+    for list in aList:
+        i = i + 1
+        print(i, list)
+    print('Select (#) to delete from list. Press (b) to return to menu')
     deletedItem = input(str(''))
     if deletedItem == 'b':
         message()
-    if deletedItem == '1' or '2' or '3' or '4' or '5':
-        i = 0
-        for list in aList:
-           i = i + 1
-           print(aList[i])
-
+    if deletedItem == '1':
+        del aList[0]
+        print(aList)
+    if deletedItem == '2':
+        del aList[1]
+        print(aList)
+    if deletedItem == '3':
+        del aList[2]
+        print(aList)
+    if deletedItem == '4':
+        del aList[3]
+        print(aList)
+    if deletedItem == '5':
+        del aList[4]
+        print(aList)
        
 
 
