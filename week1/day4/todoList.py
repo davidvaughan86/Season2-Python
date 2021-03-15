@@ -12,25 +12,25 @@ from itertools import islice
 
 
 aList = {}
-print(aList)
+
 def message():
     print('welcome to the todo list')
 
 message()
 
 def addItem ():
-    print('please add your item')
+    print('please add your item\n')
     newItem = input(str(''))
-    priority = input('please select the level of priority(low, medium, high')
+    priority = input('please select the level of priority(low, medium, high\n')
     newItemlen = len(newItem)
     
     while newItemlen < 3:
-        print('please add a valid number of characters for your item (3)')
-        priority = input('please select the level of priority(low, medium, high')
+        print('please add a valid number of characters for your item (3)\n')
+        priority = input('please select the level of priority(low, medium, high\n')
         newItemlen = len(newItem)
     if newItemlen >= 3:
         aList[newItem] = priority
-        print('this whas just added' + newItem + 'and its priority' + priority)
+        print('this whas just added' + newItem + 'and its priority level' + priority + '\n')
         print(aList)
         
 
@@ -76,11 +76,13 @@ def delItem():
 
 
 while True:
-    choice = input({
-         '1': 'Add item to list',
-         '2': 'View items on list',
-         '3': 'Delete items from list'
-     })
+    choice = input([
+         '1: Add item to list',
+         
+         '2: View items on list',
+         
+         '3: Delete items from list'
+    ])
     if choice == 'q':
         print('exiting')
         break
