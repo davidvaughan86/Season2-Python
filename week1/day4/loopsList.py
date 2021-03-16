@@ -7,7 +7,7 @@ print(len(pets))
 index = 0
 
 while index  < len(pets)
-    pet = pes[index]
+    pet = pets[index]
     print('which oet are you? im a %s' % pet)
     index += 1
     #index = index + 1
