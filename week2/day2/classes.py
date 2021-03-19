@@ -6,6 +6,7 @@ class Spider:
         self.hp = hp
     pass
 
+#dot notation
 spidey = Spider('spidey', 20, 10, 100)
 print(spidey.name)
 print(spidey.strength)

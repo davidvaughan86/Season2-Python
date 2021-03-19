@@ -55,3 +55,21 @@ print(dict1['4']) returns dictionary 4's dictionary list
 print(dict1['4']['v']) returns the 'v' dictionary list in the dictionary of '4'
 print(dict1['5'][0]) returns the index 0 (n:0) position of the list of dictionary key (5)
 print(dict1['5'][0]['n']) prints the value (o) of the dictionary (n) in the list of the dictionary of (5)
+
+# adding to the list
+
+list = ['a', 'b', 'c']
+
+list.append('d') adds 'd'  to the list after c
+
+# adding to the dictionary
+    we cannot implicityly use append to add a key value to a dictionary. we use update()
+
+dictionary = {'1':'a', '2':'b'}
+
+# looping through a dictionary
+for hpValue in car['engineChoices']: using a for loop
+    for key,value in hpValue.items(): key,value and .items() function
+        print(value['horsepower'])
+
+using .items()  to loop through the dictionary

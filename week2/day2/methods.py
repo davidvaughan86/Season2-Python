@@ -26,6 +26,8 @@ class Spider:
         self.hp += 5
 
 
+
+
 # spidey = Spider('spidey', 20, 10, 100)
 # print(spidey.strength)
 # spidey.feed()
@@ -59,7 +61,7 @@ def playerSelect ():
         player = Spider('Venom', 20, 50, 100)
         print('youve chosen:'+ player.name)
     if player1 == 'SpiderWoman':
-        player = Spider('Spiderwoman', 30, 100, 50)
+        player = Spider('Spiderwoman', 30 , 100, 50)
         print('youve chosen:'+ player.name)
     
     # print(player.name + 'is not named %s' %(player1))

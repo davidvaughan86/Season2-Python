@@ -21,7 +21,6 @@ print(dict1['3'])
 print(dict1['3'][0])
 print(dict1['4'])
 print(dict1['4']['v'])
-print(dict1['4']['v'])
 print(dict1['5'][0])
 print(dict1['5'][0]['n'])
 
